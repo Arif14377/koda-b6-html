@@ -5,15 +5,21 @@
     <meta name="Web page desktop-register" content="">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/desktop-register.css">
+    <link rel="stylesheet" href="/styles/global-style-register-dkk.css">
+    <!-- font Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div>
-        <div>
+    <div class="wrapper">
+        <div class="register-left">
             <img src="/assets/images/register.png" alt="Coffee">
         </div>
-        <div>
+        <div class="register-right">
             <div>
-                <img src="/assets/images/Frame 12.png" alt="Logo Coffee Shop">
+                <img src="/assets/images/Frame 12.png" alt="Logo Coffee Shop" width="133px" height="32px">
             </div>
             <div>
                 <h1>Register</h1>
@@ -21,27 +27,27 @@
             </div>
             <form autocomplete="on">
                 <label for="fname">Full Name</label><br>
-                <div class="input-nama">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g id="Iconly/Light/Profile">
-                    <g id="Profile">
-                    <path id="Stroke 1" fill-rule="evenodd" clip-rule="evenodd" d="M11.9849 15.3462C8.11731 15.3462 4.81445 15.931 4.81445 18.2729C4.81445 20.6148 8.09636 21.2205 11.9849 21.2205C15.8525 21.2205 19.1545 20.6348 19.1545 18.2938C19.1545 15.9529 15.8735 15.3462 11.9849 15.3462Z" stroke="#130F26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path id="Stroke 3" fill-rule="evenodd" clip-rule="evenodd" d="M11.9849 12.0059C14.523 12.0059 16.5801 9.94779 16.5801 7.40969C16.5801 4.8716 14.523 2.81445 11.9849 2.81445C9.44679 2.81445 7.3887 4.8716 7.3887 7.40969C7.38013 9.93922 9.42394 11.9973 11.9525 12.0059H11.9849Z" stroke="#130F26" stroke-width="1.42857" stroke-linecap="round" stroke-linejoin="round"/>
-                    </g>
+                <div class="wrap-input">
+                    <svg class="icon-depan" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="Iconly/Light/Profile">
+                        <g id="Profile">
+                            <path id="Stroke 1" fill-rule="evenodd" clip-rule="evenodd" d="M11.9849 15.3462C8.11731 15.3462 4.81445 15.931 4.81445 18.2729C4.81445 20.6148 8.09636 21.2205 11.9849 21.2205C15.8525 21.2205 19.1545 20.6348 19.1545 18.2938C19.1545 15.9529 15.8735 15.3462 11.9849 15.3462Z" stroke="#130F26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path id="Stroke 3" fill-rule="evenodd" clip-rule="evenodd" d="M11.9849 12.0059C14.523 12.0059 16.5801 9.94779 16.5801 7.40969C16.5801 4.8716 14.523 2.81445 11.9849 2.81445C9.44679 2.81445 7.3887 4.8716 7.3887 7.40969C7.38013 9.93922 9.42394 11.9973 11.9525 12.0059H11.9849Z" stroke="#130F26" stroke-width="1.42857" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
                     </g>
                     </svg>
                     <input type="text" id="fname" name="fname" placeholder="Enter Your Full Name">
                 </div>
                 <label for="email">Email</label><br>
-                <div class="input-email">
-                    <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div class="wrap-input">
+                    <svg class="icon-depan" width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M1.75 0C0.783502 0 4.49654e-09 0.7835 4.49654e-09 1.75V2.48577C-0.000162957 2.49479 -0.000162567 2.50381 4.49654e-09 2.51282V10.25C4.49654e-09 11.2165 0.783501 12 1.75 12H14.25C15.2165 12 16 11.2165 16 10.25V2.51265C16.0002 2.50376 16.0002 2.49485 16 2.48594V1.75C16 0.7835 15.2165 0 14.25 0H1.75ZM14.5 2.07029V1.75C14.5 1.61193 14.3881 1.5 14.25 1.5H1.75C1.61193 1.5 1.5 1.61193 1.5 1.75V2.07029L8 5.88063L14.5 2.07029ZM1.5 3.80902V10.25C1.5 10.3881 1.61193 10.5 1.75 10.5H14.25C14.3881 10.5 14.5 10.3881 14.5 10.25V3.80902L8.37929 7.39702C8.14507 7.53432 7.85493 7.53432 7.62071 7.39702L1.5 3.80902Z" fill="#24292E"/>
                     </svg>
                     <input type="text" id="email" name="email" placeholder="Enter Your Email">
                 </div>
                 <label for="pwd">Password</label><br>
-                <div class="input-pwd">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div class="wrap-input">
+                    <svg class="icon-depan" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="Iconly/Curved/Password">
                     <g id="Password">
                     <path id="Stroke 1" fill-rule="evenodd" clip-rule="evenodd" d="M10.6889 11.9999C10.6889 13.0229 9.85986 13.8519 8.83686 13.8519C7.81386 13.8519 6.98486 13.0229 6.98486 11.9999C6.98486 10.9769 7.81386 10.1479 8.83686 10.1479H8.83986C9.86186 10.1489 10.6889 10.9779 10.6889 11.9999Z" stroke="#130F26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -52,23 +58,60 @@
                     </g>
                     </svg>
                     <input type="password" id="pwd" name="pwd" placeholder="Enter Your Password">
+                    <svg class="icon-belakang" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 2.5L13 13.5" stroke="#4F5665" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M9.68155 9.84987C9.19092 10.2958 8.54325 10.5286 7.88099 10.497C7.21874 10.4655 6.59614 10.1721 6.15016 9.68155C5.70417 9.19097 5.47132 8.54331 5.50283 7.88106C5.53433 7.2188 5.82762 6.59618 6.31816 6.15015" stroke="#4F5665" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4.62465 4.28711C2.07657 5.57746 1 8.00001 1 8.00001C1 8.00001 3 12.4995 8 12.4995C9.1715 12.5089 10.3284 12.239 11.3748 11.7124" stroke="#4F5665" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M13.0383 10.5687C14.4009 9.34827 15.0002 8.00001 15.0002 8.00001C15.0002 8.00001 13.0002 3.49952 8.00016 3.49952C7.56711 3.49881 7.13475 3.53402 6.70752 3.60478" stroke="#4F5665" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8.4707 5.54443C9.00206 5.64647 9.48601 5.91803 9.84997 6.31839C10.2139 6.71875 10.4383 7.22633 10.4893 7.76498" stroke="#4F5665" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
                 </div>
                 <label for="pwd">Confirm Password</label><br>
-                <div>
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g id="Iconly/Curved/Password">
-                    <g id="Password">
-                    <path id="Stroke 1" fill-rule="evenodd" clip-rule="evenodd" d="M10.6889 11.9999C10.6889 13.0229 9.85986 13.8519 8.83686 13.8519C7.81386 13.8519 6.98486 13.0229 6.98486 11.9999C6.98486 10.9769 7.81386 10.1479 8.83686 10.1479H8.83986C9.86186 10.1489 10.6889 10.9779 10.6889 11.9999Z" stroke="#130F26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path id="Stroke 3" d="M10.6919 12H17.0099V13.852" stroke="#130F26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path id="Stroke 5" d="M14.1821 13.852V12" stroke="#130F26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path id="Stroke 7" fill-rule="evenodd" clip-rule="evenodd" d="M2.75 12C2.75 5.063 5.063 2.75 12 2.75C18.937 2.75 21.25 5.063 21.25 12C21.25 18.937 18.937 21.25 12 21.25C5.063 21.25 2.75 18.937 2.75 12Z" stroke="#130F26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </g>
-                    </g>
+                <div class="wrap-input">
+                    <svg class="icon-depan" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="Iconly/Curved/Password">
+                        <g id="Password">
+                        <path id="Stroke 1" fill-rule="evenodd" clip-rule="evenodd" d="M10.6889 11.9999C10.6889 13.0229 9.85986 13.8519 8.83686 13.8519C7.81386 13.8519 6.98486 13.0229 6.98486 11.9999C6.98486 10.9769 7.81386 10.1479 8.83686 10.1479H8.83986C9.86186 10.1489 10.6889 10.9779 10.6889 11.9999Z" stroke="#130F26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path id="Stroke 3" d="M10.6919 12H17.0099V13.852" stroke="#130F26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path id="Stroke 5" d="M14.1821 13.852V12" stroke="#130F26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path id="Stroke 7" fill-rule="evenodd" clip-rule="evenodd" d="M2.75 12C2.75 5.063 5.063 2.75 12 2.75C18.937 2.75 21.25 5.063 21.25 12C21.25 18.937 18.937 21.25 12 21.25C5.063 21.25 2.75 18.937 2.75 12Z" stroke="#130F26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        </g>
                     </svg>
                     <input type="password" id="pwd" name="pwd" placeholder="Enter Your Password Again">
+                    <svg class="icon-belakang" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 2.5L13 13.5" stroke="#4F5665" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M9.68155 9.84987C9.19092 10.2958 8.54325 10.5286 7.88099 10.497C7.21874 10.4655 6.59614 10.1721 6.15016 9.68155C5.70417 9.19097 5.47132 8.54331 5.50283 7.88106C5.53433 7.2188 5.82762 6.59618 6.31816 6.15015" stroke="#4F5665" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4.62465 4.28711C2.07657 5.57746 1 8.00001 1 8.00001C1 8.00001 3 12.4995 8 12.4995C9.1715 12.5089 10.3284 12.239 11.3748 11.7124" stroke="#4F5665" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M13.0383 10.5687C14.4009 9.34827 15.0002 8.00001 15.0002 8.00001C15.0002 8.00001 13.0002 3.49952 8.00016 3.49952C7.56711 3.49881 7.13475 3.53402 6.70752 3.60478" stroke="#4F5665" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8.4707 5.54443C9.00206 5.64647 9.48601 5.91803 9.84997 6.31839C10.2139 6.71875 10.4383 7.22633 10.4893 7.76498" stroke="#4F5665" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
                 </div>
-                <input type="submit" value="Register">
+                <input class="btn-submit" type="submit" value="Register">
             </form>
+            <p class="have-account">Have An Account? <a href="#" class="have-account-link">Login</a></p>
+            <div class="wrap-or-bottom">
+                <hr class="hr-1">
+                <span class="or">Or</span>
+                <hr class="hr-2">
+            </div>
+            <div class="wrap-oauth">
+                <div class="oauth">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.001 2.00195C6.47895 2.00195 2.00195 6.47895 2.00195 12.001C2.00195 16.991 5.65795 21.127 10.439 21.88V14.892H7.89895V12.001H10.439V9.79795C10.439 7.28995 11.932 5.90695 14.215 5.90695C15.309 5.90695 16.455 6.10195 16.455 6.10195V8.56095H15.191C13.951 8.56095 13.563 9.33295 13.563 10.124V11.999H16.334L15.891 14.89H13.563V21.878C18.344 21.129 22 16.992 22 12.001C22 6.47895 17.523 2.00195 12.001 2.00195Z" fill="#395185"/>
+                    </svg>
+                    <span>Facebook</span>
+                </div>
+                <div class="oauth">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21.8055 10.0415H21V10H12V14H17.6515C16.827 16.3285 14.6115 18 12 18C8.6865 18 6 15.3135 6 12C6 8.6865 8.6865 6 12 6C13.5295 6 14.921 6.577 15.9805 7.5195L18.809 4.691C17.023 3.0265 14.634 2 12 2C6.4775 2 2 6.4775 2 12C2 17.5225 6.4775 22 12 22C17.5225 22 22 17.5225 22 12C22 11.3295 21.931 10.675 21.8055 10.0415Z" fill="#FFC107"/>
+                        <path d="M3.15283 7.3455L6.43833 9.755C7.32733 7.554 9.48033 6 11.9998 6C13.5293 6 14.9208 6.577 15.9803 7.5195L18.8088 4.691C17.0228 3.0265 14.6338 2 11.9998 2C8.15883 2 4.82783 4.1685 3.15283 7.3455Z" fill="#FF3D00"/>
+                        <path d="M12.0002 22.0001C14.5832 22.0001 16.9302 21.0116 18.7047 19.4041L15.6097 16.7851C14.5719 17.5743 13.3039 18.0011 12.0002 18.0001C9.39916 18.0001 7.19066 16.3416 6.35866 14.0271L3.09766 16.5396C4.75266 19.7781 8.11366 22.0001 12.0002 22.0001Z" fill="#4CAF50"/>
+                        <path d="M21.8055 10.0415H21V10H12V14H17.6515C17.2571 15.1082 16.5467 16.0766 15.608 16.7855L15.6095 16.7845L18.7045 19.4035C18.4855 19.6025 22 17 22 12C22 11.3295 21.931 10.675 21.8055 10.0415Z" fill="#1976D2"/>
+                    </svg>
+                    <span>Google</span>
+                </div>
+            </div>
         </div>
     </div>
 </body>
