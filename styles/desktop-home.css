@@ -156,3 +156,47 @@ nav {
     margin: 0;
     border: none;
 }
+.wrapper-provide {
+    position: relative;
+    height: 574px;
+    top: -76px;
+}
+.provide-left {
+    position: absolute;
+    left: 0;
+    width: 731px;
+}
+.provide-left>.inside-provide-left {
+    width: 529px;
+    height: 465px;
+    margin-top: 54px;
+    margin-left: 130px;
+    margin-right: 71px;
+}
+.provide-left h2>span {
+    color: #8E6447;
+}
+.provide-left p {
+    color: #4F5665;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.provide-left li {
+    list-style: none;
+    font-family: 'Rubik';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    margin-bottom: 25px;
+    color: #4F5665;
+}
+.provide-left .ceklis {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.provide-right {
+    position: absolute;
+    right: 0;
+    width: 711px;
+}
