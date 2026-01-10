@@ -304,6 +304,7 @@ nav {
     position: relative;
     height: 583px;
     background-image: url(/assets/images/Rectangle\ 294.png);
+    margin-bottom: 70px;
 }
 .testimonial>.img-viezh {
     position: absolute;
@@ -354,4 +355,116 @@ nav {
 .testimonial>.testimoni-viezh>.stars {
     color: white;
     margin-bottom: 25px;
+}
+.testimonial .icon-panah-1 {
+    display: inline-block;
+    margin-right: 9px;
+    margin-bottom: 25px;
+}
+.testimonial .icon-panah-2 {
+    display: inline-block;
+    margin-right: 9px;
+    margin-bottom: 25px;
+}
+.testimonial .icon-panah-2 {
+    margin-right: 0;
+}
+.testimonial .icon-panah-1 svg {
+    display: inline-block;
+    vertical-align: middle;
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    background-color: white;
+    padding: 15.67px 15.67px 14.99px 14.99px;
+}
+.testimonial .icon-panah-2 svg {
+    display: inline-block;
+    vertical-align: middle;
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    background-color: #FF8906;
+    padding: 15.67px 15.67px 14.99px 14.99px;
+}
+.testimonial .wrapper-pagination>.lonjong {
+    margin-right: 9px;
+    text-decoration: none;
+}
+.testimonial .pagination {
+    display: inline-block;
+    text-decoration: none;
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 9px;
+}
+.testimonial .pagination:last-child {
+    margin-right: 0px;
+}
+
+/* footer */
+footer {
+    padding-top: 50px;
+    padding-left: 130px;
+    padding-bottom: 67.5px;
+}
+.footer {
+    display: inline-block;
+    vertical-align: top;
+}
+.footer:nth-child(1){
+    width: 355px;
+    margin-right: 45px;
+    vertical-align: bottom;
+}
+.footer:nth-child(1)>img {
+    margin-bottom: 22.5px;
+}
+.footer:nth-child(1)>p {
+    margin-bottom: 32px;
+}
+.footer:nth-child(1)>p {
+    color: #4F5665;
+}
+.footer:nth-child(1)>span {
+    color: #AFB5C0;
+}
+.footer:nth-child(2){
+    width: 94px;
+    margin-right: 106px;
+}
+.footer:nth-child(3) {
+    margin-right: 76px;
+}
+.footer:nth-child(4) .icon-sm {
+    display: inline-block;
+    margin-right: 20px;
+}
+.footer:nth-child(4) .icon-sm>svg {
+    background-color: #0B132A;
+    border-radius: 50%;
+}
+.footer>h2 {
+    font-size: 18px;
+    font-family: 'Plus Jakarta Sans';
+    font-weight: 500;
+    line-height: 30px;
+    color: #0B132A;
+    margin-bottom: 20px;
+}
+.footer:nth-child(2)>h2 {
+    margin-bottom: 26px;
+}
+.footer li {
+    list-style: none;
+}
+.footer li>a {
+    text-decoration: none;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 16px;
+    color: #4F5665;
+    line-height: 30px;
+    margin-bottom: 10px
 }
