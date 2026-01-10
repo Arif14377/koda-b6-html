@@ -298,3 +298,49 @@ nav {
 .store-locations .loc-title p {
     color: #4F5665;
 }
+
+/* Testimonial */
+.testimonial {
+    position: relative;
+    height: 583px;
+    background-image: url(/assets/images/Rectangle\ 294.png);
+}
+.testimonial>.img-viezh {
+    position: absolute;
+    left: 132px;
+    top: 76px;
+}
+.testimonial>.testimoni-viezh {
+    position:absolute;
+    left: 730px;
+    top: 76px;
+}
+.testimonial>.testimoni-viezh>h2 {
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+.testimonial>.testimoni-viezh>h3 {
+    color: white;
+    font-size: 48px;
+    font-weight: 500;
+    font-family: 'Plus Jakarta Sans';
+    margin-bottom: 25px;
+}
+.testimonial>.testimoni-viezh>.occup {
+    color: #FF8906;
+    margin-bottom: 25px;
+}
+.testimonial>.testimoni-viezh>.quote {
+    color: white;
+    margin-bottom: 25px;
+}
+.testimonial>.testimoni-viezh>.stars svg {
+    margin-right: 25px;
+    height: 20px;
+}
+.testimonial>.testimoni-viezh>.stars {
+    color: white;
+    margin-bottom: 25px;
+}
