@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body {
     width: 1440px;
@@ -206,7 +207,7 @@ nav {
 .products h2 {
     margin-bottom: 25px;
 }
-.products .garis-bawah {
+.garis-bawah {
     height: 7px;
     width: 68px;
     background-color: #FF8906;
@@ -235,8 +236,8 @@ nav {
     top: 218px;
     left: 9px;
     right: 9px;
-    width: 242px;
-    height: 181px;
+    width: 262px;
+    height: 217px;
     background-color: white;
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.06);
     padding: 11px 10px 25px 10px;
@@ -265,6 +266,9 @@ nav {
     border-radius: 6px;
 }
 .products .item-product .btn-product a>svg {
+    display: inline-block;
+    height: 35px;
+    width: 58px;
     vertical-align: middle;
     padding: 5.5px 17px;
     border: 1px solid;
