@@ -321,12 +321,23 @@ nav {
     font-weight: 400;
     margin-bottom: 25px;
 }
-.testimonial>.testimoni-viezh>h3 {
+.testimonial>.testimoni-viezh>.wrapper-name-viezh {
+    margin-bottom: 25px;
+}
+.testimonial>.testimoni-viezh .garis-vertical {
+    display: inline-block;
+    width: 7px;
+    height: 68px;
+    background-color: #FF8906;
+    margin-right: 20px;
+}
+.testimonial>.testimoni-viezh h3 {
+    display: inline-block;
     color: white;
     font-size: 48px;
     font-weight: 500;
     font-family: 'Plus Jakarta Sans';
-    margin-bottom: 25px;
+    vertical-align: top;
 }
 .testimonial>.testimoni-viezh>.occup {
     color: #FF8906;
