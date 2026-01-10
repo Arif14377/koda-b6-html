@@ -1,3 +1,7 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 body {
     width: 1440px;
     margin: 0;
@@ -8,6 +12,7 @@ nav {
     height: 76px;
     background-color: #0B090921;
     color: white;
+    z-index: 2;
 }
 .nav-left {
     position: absolute;
@@ -70,4 +75,84 @@ nav {
 }
 .cart-icon {
     margin-left: 22px;
+}
+.wrapper-banner {
+    position: relative;
+    height: 1024px;
+    color: white;
+    top: -76px;
+}
+.left-banner {
+    position: absolute;
+    left: 0;
+    background-image: url("/assets/images/Rectangle 286.png");
+    width: 730px;
+    height: 1024px;
+    margin: 0;
+    border: none;
+}
+.left-banner>.left-banner-inside {
+    margin-top: 283px;
+    margin-left: 132px;
+    margin-right: 80px;
+}
+.left-banner>.left-banner-inside>.wrapper-h1 {
+    margin-bottom: 25px;
+
+}
+.left-banner>.left-banner-inside>.wrapper-h1>h1 {
+    margin-bottom: 25px;
+}
+.left-banner>.left-banner-inside>.wrapper-h1>p {
+    margin-right: 30px;
+}
+.left-banner>.left-banner-inside>.wrapper-btn-get-started {
+    margin: 15px 0 25px 0;
+    padding: 15px 0 15px 0;
+}
+.left-banner>.left-banner-inside>.wrapper-btn-get-started>.btn-get-started {
+    padding: 15px 32px;
+    margin: 15px 0;
+    background-color: #FF8906;
+    border-radius: 6px;
+    text-decoration: none;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: white;
+}
+.left-banner .proof-1 {
+    display: inline-block;
+    width: 146px;
+    margin-right: 36px;
+}
+.left-banner .proof-2 {
+    display: inline-block;
+    width: 146px;
+    margin-right: 36px;
+}
+.left-banner .proof-3 {
+    display: inline-block;
+    width: 146px;
+}
+.left-banner .proof-num {
+    font-family: 'Plus Jakarta Sans';
+    font-size: 48px;
+    font-weight: 500;
+    color: #FF8906;
+}
+.left-banner .wrapper-proof p {
+    font-family: 'Plus Jakarta Sans';
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    margin-top: 12px;
+}
+.right-banner{
+    position: absolute;
+    right: 0;
+    width: 712px;
+    margin: 0;
+    border: none;
 }
