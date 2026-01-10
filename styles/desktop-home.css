@@ -275,3 +275,26 @@ nav {
     border-color: #FF8906;
     border-radius: 6px;
 }
+
+/* Maps Store */
+.store-locations {
+    text-align: center;
+    background-color: rgba(232, 232, 232, 0.3);
+    padding: 46px 120px 97px 140px;
+}
+/* .store-locations>.wrapper-inside-store-location {
+    margin: 46px 120px 97px 140px;
+} */
+.store-locations .loc-title {
+    margin-bottom: 60px;
+}
+.store-locations .loc-title>h2 {
+    /* display: inline-block; */
+    margin-bottom: 25px;
+}
+.store-locations .loc-title>h2>span {
+    color: #8E6447;
+}
+.store-locations .loc-title p {
+    color: #4F5665;
+}
