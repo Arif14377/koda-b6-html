@@ -106,5 +106,59 @@
             <a class="pagination" href="#"></a>
         </div>
     </section>
+    <section class="our-product">
+        <aside class="filter">
+            <form>
+                <div>
+                    <p>Filter</p>
+                    <button type="reset">Reset Filter</button>
+                </div>
+
+                <label for="search-product">Search</label><br>
+                <input type="search" id="search-product" name="search-product"><br>
+                
+                <fieldset>
+                    <legend>Category</legend>
+
+                    <input type="checkbox" name="favourite" id="favourite" value="favourite">
+                    <label for="favourite">Favourite Product</label><br>
+
+                    <input type="checkbox" name="coffee" id="coffee" value="coffee">
+                    <label for="coffee">Coffee</label><br>
+
+                    <input type="checkbox" name="non-coffee" id="non-coffee" value="non-coffee">
+                    <label for="coffee">Non Coffee</label><br>
+
+                    <input type="checkbox" name="foods" id="foods" value="foods">
+                    <label for="foods">Foods</label><br>
+
+                    <input type="checkbox" name="addon" id="addon" value="addon">
+                    <label for="addon">Add-On</label><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Sort By</legend>
+                    <input type="checkbox" name="one-get-one" id="one-get-one" value="one-get-one">
+                    <label for="one-get-one">Buy 1 get 1</label><br>
+
+                    <input type="checkbox" name="flash-sale" id="flash-sale" value="flash-sale">
+                    <label for="flash-sale">Flash sale</label><br>
+
+                    <input type="checkbox" name="birthday" id="birthday" value="birthday">
+                    <label for="birthday">Birthday Package</label><br>
+
+                    <input type="checkbox" name="cheap" id="cheap" value="cheap">
+                    <label for="cheap">Cheap</label><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Range Price</legend>
+                    <input type="range" name="price" id="price">
+                </fieldset>
+                
+                <button type="submit">Apply Filter</button>
+            </form>
+        </aside>
+    </section>
 </body>
 </html>
