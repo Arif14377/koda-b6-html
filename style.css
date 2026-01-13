@@ -112,12 +112,25 @@ nav {
     padding-left: 1.563rem;
     margin-bottom: 1.563rem;
 }
+.today-promo > .wrapper-pagination > .lonjong, .pagination {
+    text-decoration: none;
+}
+
 .our-product {
-    display: flex;
-    justify-content: space-between;
     padding: 0 8.313rem 2rem 7.938rem;
 }
-.our-product > .product-items {
+.our-product > h2 {
+    color: #0B0909;
+    margin-bottom: 1.535rem;
+}
+.our-product > h2 > span {
+    color: #8E6447;
+}
+.our-product > .flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+.our-product > .flex-container > .product-items {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
