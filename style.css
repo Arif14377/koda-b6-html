@@ -35,16 +35,87 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-left: 7.938rem;
+    padding-right: 8.125rem;
+    margin-bottom: 1.563rem;
+    align-items: center;
+}
+.today-promo > .wrapper-title-promo > h2 {
+    color: #0B0909;
+}
+.today-promo > .wrapper-title-promo > h2 > span {
+    color: #8E6447;
+}
+.today-promo > .wrapper-title-promo > .wrapper-icon-panah {
+    display: flex;
+    gap: 0.563rem;
+}
+.today-promo > .wrapper-title-promo > .wrapper-icon-panah > .icon-panah {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.938rem;
+    height: 2.938rem;
+    border-radius: 50%;
+}
+.today-promo > .wrapper-title-promo > .wrapper-icon-panah > .icon-panah:first-child {
+    background-color: #E8E8E8;
+}
+.today-promo > .wrapper-title-promo > .wrapper-icon-panah > .icon-panah:last-child {
+    background-color: #FF8906;
 }
 .items-promo {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 3.063rem;
+    margin-bottom: 1.563rem;
+}
+.items-promo > .item-promo {
+    display: flex;
+    gap: 0.563rem;
+    background-color: #88B788;
+    border-radius: 1.25rem;
+    align-items: end;
+    align-content: space-between;
+    text-decoration: none;
+}
+.items-promo > .item-promo > .image {
+    margin-left: 0.625rem;
+    margin-bottom: 0;
+}
+.items-promo > .item-promo > .description {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    margin: 0.688rem 1.563rem 0.688rem 0.563rem;
+    color: black;
+}
+.items-promo > .item-promo > .description > h3 {
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+.items-promo > .item-promo > .description > p {
+    font-size: 0.875rem;
+    font-weight: 400;
+    margin-bottom: 0.813rem;
+}
+.items-promo > .item-promo > .description > span {
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+.items-promo > .item-promo > .description > span {
+    color: white;
+}
+.today-promo > .wrapper-pagination {
+    padding-left: 1.563rem;
+    margin-bottom: 1.563rem;
 }
 .our-product {
     display: flex;
     justify-content: space-between;
-    margin: 0 1.5rem 6.25rem 1.5rem;
+    padding: 0 8.313rem 2rem 7.938rem;
 }
 .our-product > .product-items {
     display: grid;
