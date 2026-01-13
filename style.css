@@ -129,12 +129,71 @@ nav {
 .our-product > .flex-container {
     display: flex;
     justify-content: space-between;
+    gap: 1.25rem;
+}
+.our-product > .flex-container > .filter {
+    color: white;
+    font-family: 'Plus Jakarta Sans';
+    background-color: #0B0909;
+    padding: 1.688rem 2.375rem 2.625rem 1.875rem;
+    flex-grow: 383;
+    border-radius: 1rem;
+}
+.our-product .filter .search-product {
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+.our-product .filter #search-product {
+    height: 4rem;
+    width: 19.688rem;
+    padding-left: 1.204rem;
+    margin-top: 0.625rem;
+    margin-bottom: 1rem;
+    border: 1px #DEDEDE;
+    border-radius: 4px;
+}
+.our-product .header-filter {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.our-product .filter > form p {
+    font-family: 'Plus Jakarta Sans';
+    font-size: 1.375rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+}
+.our-product .filter > form > .header-filter > button {
+    font-family: 'Plus Jakarta Sans';
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+    color: white;
+    background-color: transparent;
+}
+.our-product .filter fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border: none;
+    margin-bottom: 1rem;
+}
+.our-product .filter fieldset input {
+    color: black;
+}
+.our-product .filter fieldset legend {
+    font-family: 'Plus Jakarta Sans';
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
 }
 .our-product > .flex-container > .product-items {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     gap: 1.5rem;
+    flex-grow: 777;
 }
 .product-item > .wrapper-img-item {
     position: relative;
