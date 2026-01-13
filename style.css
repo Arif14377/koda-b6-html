@@ -1,0 +1,68 @@
+
+/* Desktop - Product */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0;
+    padding: 0;
+}
+nav {
+    background-color: #0B0909;
+}
+.banner-product {
+    display: flex;
+    height: 19.063rem;
+    background-image: url(/assets/images/Rectangle\ 299.jpg);
+    align-items: center;
+    padding-left: 8.125rem;
+    margin-bottom: 3rem;
+    /* justify-content: center; */
+}
+.banner-product > h1 {
+    color: white;
+    /* justify-content: center; */
+}
+.today-promo {
+    display: flex;
+    flex-direction: column;
+}
+.today-promo > .wrapper-title-promo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.items-promo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.our-product {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1.5rem 6.25rem 1.5rem;
+}
+.our-product > .product-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 1.5rem;
+}
+.product-item > .wrapper-img-item {
+    position: relative;
+}
+.product-item > .wrapper-img-item > p {
+    position: absolute;
+}
+.product-item > .wrapper-img-item > img {
+    width: 100%;
+    max-width: 377px;
+}
+.product-item > .wrapper-desc-item {
+    width: 100%;
+    max-width: 345px;
+}
