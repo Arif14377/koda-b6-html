@@ -299,3 +299,47 @@ nav {
     background-color: #FF8906;
     color: #0B0909;
 }
+
+
+/* Desktop - Detail Product */
+.detail-product {
+    display: flex;
+    gap: 1.25rem;
+}
+.detail-product > .images {
+    display: flex;
+    flex-direction: column;
+}
+.detail-product > .images > .img-small {
+    display: flex;
+}
+.detail-product > .wrap-desc {
+    display: flex;
+    flex-direction: column;
+}
+.detail-product > .wrap-desc > .resume {
+    display: flex;
+}
+.recommend-product {
+    display: flex;
+    flex-direction: column;
+}
+.recommend-product > .recommend-list {
+    display: flex;
+}
+.recommend-product .recommend-item > div:first-child {
+    position: relative;
+}
+.recommend-product .recommend-item > div:first-child > p {
+    position: absolute;
+}
+.recommend-product .recommend-item > div:first-child > img {
+    width: 100%;
+}
+.recommend-product .recommend-item > div:last-child {
+    width: 100%;
+    max-width: 21.563rem;
+}
+.recommend-product .recommend-item > div:last-child > .btn-product {
+    display: flex;
+}
