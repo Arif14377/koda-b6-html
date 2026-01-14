@@ -333,55 +333,84 @@
 
     <!-- Script -->
      <script>
+        const data = [
+            {
+                imgUrl : "/assets/images/image 27.png",
+                alt: "Hazelnut Latte",
+                name: "Hazelnut Latte",
+                description: "You can explore the menu that we provide with fun and have their own taste and make your day better.",
+            },
+            {
+                imgUrl : "/assets/images/image 22.png",
+                name: "Hazelnut Latte",
+                name: "Hazelnut Latte",
+                description: "You can explore the menu that we provide with fun and have their own taste and make your day better.",
+            },
+            {
+                imgUrl : "/assets/images/image 30.png",
+                name: "Hazelnut Latte",
+                name: "Hazelnut Latte",
+                description: "You can explore the menu that we provide with fun and have their own taste and make your day better.",
+            },
+            {
+                imgUrl : "/assets/images/image 31.png",
+                name: "Hazelnut Latte",
+                name: "Hazelnut Latte",
+                description: "You can explore the menu that we provide with fun and have their own taste and make your day better.",
+            },
+        ]
+
         const wrapperProducts = document.querySelector(".list-product")
         
-        const wrapperItemProduct = document.createElement("div")
-        wrapperItemProduct.setAttribute("class", "item-product")
-        wrapperProducts.append(wrapperItemProduct)
+        data.forEach(product => {
+            const wrapperItemProduct = document.createElement("div")
+            wrapperItemProduct.setAttribute("class", "item-product")
+            wrapperProducts.append(wrapperItemProduct)
 
-        const divInside = document.createElement("div")
-        divInside.setAttribute("class", "wrapper-inside-item-product")
-        wrapperItemProduct.append(divInside)
+            const divInside = document.createElement("div")
+            divInside.setAttribute("class", "wrapper-inside-item-product")
+            wrapperItemProduct.append(divInside)
 
-        const divImage = document.createElement("div")
-        divInside.append(divImage)
-        
-        const imgProduct = document.createElement("img")
-        imgProduct.setAttribute("src", "/assets/images/image 27.png")
-        imgProduct.setAttribute("alt", "Hazelnut Latte")
-        divImage.append(imgProduct)
+            const divImage = document.createElement("div")
+            divInside.append(divImage)
+            
+            const imgProduct = document.createElement("img")
+            imgProduct.setAttribute("src", product.imgUrl)
+            imgProduct.setAttribute("alt", product.alt)
+            divImage.append(imgProduct)
 
-        const wrapperDescItem = document.createElement("div")
-        wrapperDescItem.setAttribute("class", "wrapper-desc-item")
-        divInside.append(wrapperDescItem)
+            const wrapperDescItem = document.createElement("div")
+            wrapperDescItem.setAttribute("class", "wrapper-desc-item")
+            divInside.append(wrapperDescItem)
 
-        const productName = document.createElement("h3")
-        productName.textContent = "Hazelnut Latte"
-        wrapperDescItem.append(productName)
+            const productName = document.createElement("h3")
+            productName.textContent = product.name
+            wrapperDescItem.append(productName)
 
-        const productDesc = document.createElement("p")
-        productDesc.textContent = "You can explore the menu that we provide with fun and have their own taste and make your day better."
-        wrapperDescItem.append(productDesc)
+            const productDesc = document.createElement("p")
+            productDesc.textContent = product.description
+            wrapperDescItem.append(productDesc)
 
-        const wrapperCta = document.createElement("div")
-        wrapperCta.setAttribute("class", "home-btn-product")
-        wrapperDescItem.append(wrapperCta)
+            const wrapperCta = document.createElement("div")
+            wrapperCta.setAttribute("class", "home-btn-product")
+            wrapperDescItem.append(wrapperCta)
 
-        const wrapperBtnBuy = document.createElement("p")
-        wrapperCta.append(wrapperBtnBuy)
+            const wrapperBtnBuy = document.createElement("p")
+            wrapperCta.append(wrapperBtnBuy)
 
-        const btnBuy = document.createElement("a")
-        btnBuy.setAttribute("href", "/pages/desktop-detail-product.html")
-        btnBuy.textContent = "Buy"
-        wrapperBtnBuy.append(btnBuy)
+            const btnBuy = document.createElement("a")
+            btnBuy.setAttribute("href", "/pages/desktop-detail-product.html")
+            btnBuy.textContent = "Buy"
+            wrapperBtnBuy.append(btnBuy)
 
-        const btnCart = document.createElement("a")
-        btnCart.setAttribute("href", "#")
-        wrapperCta.append(btnCart)
+            const btnCart = document.createElement("a")
+            btnCart.setAttribute("href", "#")
+            wrapperCta.append(btnCart)
 
-        const iconBtnCart = document.createElement("img")
-        iconBtnCart.setAttribute("src", "/assets/images/ShoppingCart (1).svg")
-        btnCart.append(iconBtnCart)
+            const iconBtnCart = document.createElement("img")
+            iconBtnCart.setAttribute("src", "/assets/images/ShoppingCart (1).svg")
+            btnCart.append(iconBtnCart)
+        });
      </script>
 </body>
 </html>
