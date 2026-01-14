@@ -18,8 +18,12 @@
             <div class="nav-left">
                 <img src="/assets/images/Frame 13.png" alt="Logo Coffe Shop">
                 <ul class="menu-navigasi">
-                    <li>Home</li>
-                    <li>Product</li>
+                    <a href="/index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="/pages/desktop-product.html">
+                        <li>Product</li>
+                    </a>
                 </ul>
             </div>
             <div class="nav-right">
@@ -125,6 +129,7 @@
                     <div class="wrapper-desc-item">
                         <h3>Hazelnut Latte</h3>
                         <p>You can explore the menu that we provide with fun and have their own taste and make your day better.</p>
+                        <span class="price">IDR 20.000</span>
                         <div class="home-btn-product">
                             <p>
                                 <a href="#">Buy</a>
@@ -335,34 +340,44 @@
      <script>
         const data = [
             {
+                id: "1",
                 imgUrl : "/assets/images/image 27.png",
                 alt: "Hazelnut Latte",
                 name: "Hazelnut Latte",
                 description: "You can explore the menu that we provide with fun and have their own taste and make your day better.",
+                price: "30000",
             },
             {
+                id: "2",
                 imgUrl : "/assets/images/image 22.png",
                 name: "Hazelnut Latte",
                 name: "Hazelnut Latte",
                 description: "You can explore the menu that we provide with fun and have their own taste and make your day better.",
+                price: "35000"
             },
             {
+                id: "3",
                 imgUrl : "/assets/images/image 30.png",
                 name: "Hazelnut Latte",
                 name: "Hazelnut Latte",
                 description: "You can explore the menu that we provide with fun and have their own taste and make your day better.",
+                price: "31000"
             },
             {
+                id: "4",
                 imgUrl : "/assets/images/image 31.png",
                 name: "Hazelnut Latte",
                 name: "Hazelnut Latte",
                 description: "You can explore the menu that we provide with fun and have their own taste and make your day better.",
+                price: "27000"
             },
             {
+                id: "5",
                 imgUrl : "/assets/images/image 31.png",
                 name: "Hazelnut Latte",
                 name: "Hazelnut Latte",
                 description: "You can explore the menu that we provide with fun and have their own taste and make your day better.",
+                price: "20000"
             },
         ]
 
@@ -397,6 +412,11 @@
             productDesc.textContent = product.description
             wrapperDescItem.append(productDesc)
 
+            const price = document.createElement("span")
+            price.setAttribute("class", "price")
+            price.textContent = `IDR ${product.price}`
+            wrapperDescItem.append(price)
+
             const wrapperCta = document.createElement("div")
             wrapperCta.setAttribute("class", "home-btn-product")
             wrapperDescItem.append(wrapperCta)
@@ -405,7 +425,7 @@
             wrapperCta.append(wrapperBtnBuy)
 
             const btnBuy = document.createElement("a")
-            btnBuy.setAttribute("href", "/pages/desktop-detail-product.html")
+            btnBuy.setAttribute("href", `/pages/desktop-detail-product.html?id=${product.id}`)
             btnBuy.textContent = "Buy"
             wrapperBtnBuy.append(btnBuy)
 

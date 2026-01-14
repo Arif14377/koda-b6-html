@@ -17,8 +17,12 @@
             <div class="nav-left">
                 <img src="/assets/images/Frame 13.png" alt="Logo Coffe Shop">
                 <ul class="menu-navigasi">
-                    <li>Home</li>
-                    <li>Product</li>
+                    <a href="/index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="/pages/desktop-product.html">
+                        <li>Product</li>
+                    </a>
                 </ul>
             </div>
             <div class="nav-right">
@@ -39,7 +43,7 @@
     </header>
     <main class="page-detail-product">
         <section class="detail-product">
-            <div class="images">
+            <!-- <div class="images">
                 <img src="/assets/images/image 31.png" alt="coffee">
                 <div class="img-small">
                     <img src="/assets/images/image 32.png" alt="coffee">
@@ -116,7 +120,7 @@
                         add to cart
                     </a>
                 </div>
-            </div>
+            </div> -->
         </section>
         <section class="recommend-product">
             <h2>Recommendation <span>For You</span></h2>
@@ -311,5 +315,192 @@
             </div>
         </div>
     </footer>
+
+    <!-- script js -->
+     <script>
+        const secDetailProduct = document.querySelector(".detail-product")
+        // console.log(secDetailProduct)
+
+        const wrapImages = document.createElement("div")
+        wrapImages.setAttribute("class", "images")
+        secDetailProduct.append(wrapImages)
+        
+        const mainImage = document.createElement("img")
+        mainImage.setAttribute("src", "/assets/images/image 31.png")
+        mainImage.setAttribute("alt", "coffee")
+        wrapImages.append(mainImage)
+        
+        const divImgSmall = document.createElement("div")
+        divImgSmall.setAttribute("class", "img-small")
+        wrapImages.append(divImgSmall)
+
+        const firstImage = document.createElement("img")
+        firstImage.setAttribute("src", "/assets/images/image 32.png")
+        firstImage.setAttribute("alt", "coffee")
+        divImgSmall.append(firstImage)
+
+        const secondImage = document.createElement("img")
+        secondImage.setAttribute("src", "/assets/images/image 33.png")
+        secondImage.setAttribute("alt", "coffee")
+        divImgSmall.append(secondImage)
+
+        const thirdImage = document.createElement("img")
+        thirdImage.setAttribute("src", "/assets/images/image 34.png")
+        thirdImage.setAttribute("alt", "coffee")
+        divImgSmall.append(thirdImage)
+
+        const wrapDesc = document.createElement("div")
+        wrapDesc.setAttribute("class", "wrap-desc")
+        secDetailProduct.append(wrapDesc)
+
+        const badgeFlashSale = document.createElement("span")
+        badgeFlashSale.textContent = "FLASH SALE"
+        wrapDesc.append(badgeFlashSale)
+
+        const titleDetailProduct = document.createElement("h1")
+        titleDetailProduct.textContent = "Hazelnut Latte"
+        wrapDesc.append(titleDetailProduct)
+
+        const divPrice = document.createElement("div")
+        divPrice.setAttribute("class", "price")
+        wrapDesc.append(divPrice)
+
+        const startPrice = document.createElement("span")
+        startPrice.textContent = "IDR 20.000"
+        divPrice.append(startPrice)
+
+        const promoPrice = document.createElement("p")
+        promoPrice.textContent = "IDR 10.000"
+        divPrice.append(promoPrice)
+
+        const divStars = document.createElement("div")
+        divStars.setAttribute("class", "stars")
+        wrapDesc.append(divStars)
+
+        for (let i=0; i < 5; i++) {
+            const star = document.createElement("img")
+            star.setAttribute("src", "/assets/images/star.svg")
+            star.setAttribute("alt", "star")
+            divStars.append(star)
+        }
+
+        const rate = document.createElement("p")
+        rate.textContent = "5.0"
+        divStars.append(rate)
+        // console.log(rate)
+
+        const divResume = document.createElement("div")
+        divResume.setAttribute("class", "resume")
+        wrapDesc.append(divResume)
+
+        const reviewer = document.createElement("p")
+        reviewer.textContent = "200+ Review"
+        divResume.append(reviewer)
+
+        const batas = document.createElement("p")
+        batas.textContent = "|"
+        divResume.append(batas)
+
+        const recom = document.createElement("p")
+        recom.textContent = "Recommendation"
+        divResume.append(recom)
+
+        const jempol = document.createElement("img")
+        jempol.setAttribute("src", "/assets/images/ThumbsUp.svg")
+        divResume.append(jempol)
+
+        const description = document.createElement("p")
+        description.textContent = "Cold brewing is a method of brewing that combines ground coffee and cool water and uses time instead of heat to extract the flavor. It is brewed in small batches and steeped for as long as 48 hours."
+        description.setAttribute("class", "description")
+        wrapDesc.append(description)
+
+        const divBtnQty = document.createElement("div")
+        divBtnQty.setAttribute("class", "btn-qty")
+        wrapDesc.append(divBtnQty)
+
+        const minQty = document.createElement("button")
+        minQty.setAttribute("class", "min-qty")
+        minQty.textContent = "-"
+        divBtnQty.append(minQty)
+
+        const inputQty = document.createElement("input")
+        inputQty.setAttribute("type", "text")
+        divBtnQty.append(inputQty)
+
+        const plusQty = document.createElement("button")
+        plusQty.setAttribute("class", "plus-qty")
+        plusQty.textContent = "+"
+        divBtnQty.append(plusQty)
+
+        const divChoose = document.createElement("div")
+        divChoose.setAttribute("class", "choose")
+        wrapDesc.append(divChoose)
+
+        const titleChoose = document.createElement("p")
+        titleChoose.textContent = "Choose Size"
+        divChoose.append(titleChoose)
+
+        const divSize = document.createElement("div")
+        divChoose.append(divSize)
+
+        const regular = document.createElement("a")
+        regular.setAttribute("href", "#")
+        regular.textContent = "Regular"
+        divSize.append(regular)
+
+        const medium = document.createElement("a")
+        medium.setAttribute("href", "#")
+        medium.textContent = "Medium"
+        divSize.append(medium)
+
+        const large = document.createElement("a")
+        large.setAttribute("href", "#")
+        large.textContent = "Large"
+        divSize.append(large)
+
+        const divChooseHotIce = document.createElement("div")
+        divChooseHotIce.setAttribute("class", "choose")
+        wrapDesc.append(divChooseHotIce)
+
+        const titleHotIce = document.createElement("p")
+        titleHotIce.textContent = "Hot/Ice?"
+        divChooseHotIce.append(titleHotIce)
+
+        const divHotIce = document.createElement("div")
+        divChooseHotIce.append(divHotIce)
+
+        const ice = document.createElement("a")
+        ice.setAttribute("href", "#")
+        ice.textContent = "Ice"
+        divHotIce.append(ice)
+
+        const hot = document.createElement("a")
+        hot.setAttribute("href", "#")
+        hot.textContent = "Hot"
+        divHotIce.append(hot)
+
+        const divBtnProceed = document.createElement("div")
+        divBtnProceed.setAttribute("class", "btn-proceed")
+        wrapDesc.append(divBtnProceed)
+
+        const btnBuy = document.createElement("a")
+        btnBuy.textContent = "Buy"
+        btnBuy.setAttribute("href", "#")
+        divBtnProceed.append(btnBuy)
+
+        const btnCart = document.createElement("a")
+        btnCart.setAttribute("href", "#")
+        divBtnProceed.append(btnCart)
+
+        const imgBtnCart = document.createElement("img")
+        imgBtnCart.setAttribute("src", "/assets/images/ShoppingCart (1).svg")
+        
+        const addToCart = document.createElement("p")
+        addToCart.textContent = "add to cart"
+
+        btnCart.append(imgBtnCart, addToCart)
+
+
+     </script>
 </body>
 </html>
