@@ -501,13 +501,18 @@ nav {
     color: #4F5665;
 }
 .home-products .list-product {
-    height: 435px;
+    display: flex;
+    min-height: 435px;
+    max-height: auto;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
 }
 .home-products .list-product>.item-product {
-    display: inline-block;
     width: 280px;
     height: 435px;
     margin-right: 20px;
+    margin-bottom: 30px;
 }
 .home-products .list-product>.item-product:last-child {
     margin-right: 0;
