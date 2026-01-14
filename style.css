@@ -1021,6 +1021,7 @@ nav {
 .page-detail-product .detail-product {
     display: flex;
     gap: 1.25rem;
+    margin-bottom: 3rem;
 }
 .page-detail-product .detail-product > .images {
     display: flex;
