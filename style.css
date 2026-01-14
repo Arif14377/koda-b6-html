@@ -51,6 +51,15 @@ nav {
     vertical-align: middle;
     margin-left: 60px;
 }
+.nav-left li > a {
+    text-decoration: none;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+    color: white;
+}
+
 .nav-right {
     position: absolute;
     right: 130px;
@@ -697,7 +706,7 @@ body {
 nav {
     background-color: #0B0909;
 }
-.banner-product {
+.product-banner-product {
     display: flex;
     height: 19.063rem;
     background-image: url(/assets/images/Rectangle\ 299.jpg);
@@ -706,11 +715,16 @@ nav {
     margin-bottom: 3rem;
     /* justify-content: center; */
 }
-.banner-product > h1 {
+.product-banner-product > h1 {
     color: white;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 3rem;
+    font-weight: 500;
+    width: 100%;
+    max-width: 55rem;
     /* justify-content: center; */
 }
-.today-promo {
+.product-today-promo {
     display: flex;
     flex-direction: column;
 }
@@ -749,10 +763,9 @@ nav {
 }
 .items-promo {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     gap: 3.063rem;
     margin-bottom: 1.563rem;
+    overflow-x: auto;
 }
 .items-promo > .item-promo {
     display: flex;
@@ -760,8 +773,9 @@ nav {
     background-color: #88B788;
     border-radius: 1.25rem;
     align-items: end;
-    align-content: space-between;
     text-decoration: none;
+    height: 6.813rem;
+    width: 20.938rem;
 }
 .items-promo > .item-promo > .image {
     margin-left: 0.625rem;
