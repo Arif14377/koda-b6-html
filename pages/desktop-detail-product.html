@@ -318,90 +318,10 @@
 
     <!-- script js -->
      <script>
-        const data = [
-            {
-                id: "1",
-                alt: "Hazelnut Latte",
-                name: "Hazelnut Latte",
-                description: "You can explore the menu that we provide with fun and have their own taste and make your day better.",
-                price: "30000",
-                promoPrice: "26000",
-                imgUrl : "/assets/images/image 27.png",
-                bigImage: "/assets/images/image 31.png",
-                imgUrl1 : "/assets/images/image 32.png",
-                imgUrl2 : "/assets/images/image 33.png",
-                imgUrl3 : "/assets/images/image 34.png",
-                flashSale: true,
-            },
-            {
-                id: "2",
-                alt: "Cappucino",
-                name: "Cappucino",
-                description: "You can explore the menu that we provide with fun and have their own taste and make your day better.",
-                price: "35000",
-                promoPrice: "29000",
-                imgUrl : "/assets/images/image 22.png",
-                bigImage: "/assets/images/image 31.png",
-                imgUrl1 : "/assets/images/image 32.png",
-                imgUrl2 : "/assets/images/image 33.png",
-                imgUrl3 : "/assets/images/image 34.png",
-                flashSale: false,
-            },
-            {
-                id: "3",
-                alt: "Cafe Latte",
-                name: "Cafe Latte",
-                description: "You can explore the menu that we provide with fun and have their own taste and make your day better.",
-                price: "31000",
-                promoPrice: "25000",
-                imgUrl : "/assets/images/image 30.png",
-                bigImage: "/assets/images/image 31.png",
-                imgUrl1 : "/assets/images/image 32.png",
-                imgUrl2 : "/assets/images/image 33.png",
-                imgUrl3 : "/assets/images/image 34.png",
-                flashSale: true,
-            },
-            {
-                id: "4",
-                alt: "Caramel Macchiato",
-                name: "Caramel Macchiato",
-                description: "You can explore the menu that we provide with fun and have their own taste and make your day better.",
-                price: "27000",
-                promoPrice: "24000",
-                imgUrl : "/assets/images/image 31.png",
-                bigImage: "/assets/images/image 31.png",
-                imgUrl1 : "/assets/images/image 32.png",
-                imgUrl2 : "/assets/images/image 33.png",
-                imgUrl3 : "/assets/images/image 34.png",
-                flashSale: true,
-            },
-            {
-                id: "5",
-                alt: "Affogato",
-                name: "Affogato",
-                description: "You can explore the menu that we provide with fun and have their own taste and make your day better.",
-                price: "20000",
-                promoPrice: "17000",
-                imgUrl : "/assets/images/image 31.png",
-                bigImage: "/assets/images/image 31.png",
-                imgUrl1 : "/assets/images/image 32.png",
-                imgUrl2 : "/assets/images/image 33.png",
-                imgUrl3 : "/assets/images/image 34.png",
-                flashSale: true,
-            },
-        ]
-
-        // console.log(window.location.search)
-        // const rawQs = window.location.search
         const queryString = new URLSearchParams(window.location.search)
         const queryId = queryString.get('id')
-        // console.log(typeof(queryId))
 
         const secDetailProduct = document.querySelector(".detail-product")
-        // console.log(secDetailProduct)
-        
-        // console.log(queryId)
-        // console.log(data)
 
         function renderData(data, queryId) {
             if (queryId > data.length && queryId < 1) {
@@ -409,7 +329,6 @@
                 throw error
                 return
             }
-
 
             const productById = data.find(product => {
                 return product.id === queryId
@@ -420,8 +339,6 @@
                 throw error
                 return
             }
-
-            // console.log(productById)
 
             const wrapImages = document.createElement("div")
             wrapImages.setAttribute("class", "images")
