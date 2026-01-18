@@ -1,9 +1,10 @@
 /** Global Style **/
-h1 {
+.h1-primary {
     font-family: 'Plus Jakarta Sans';
     font-size: 48px;
     /* color: white; */
     font-weight: 500;
+    color: #0B0909;
 }
 h2 {
     font-family: 'Plus Jakarta Sans';
