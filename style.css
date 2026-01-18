@@ -1200,11 +1200,16 @@ nav {
 
 
 /* Desktop - Payment Details */
-.payment-details {
+
+.payment-details > header {
+    margin-bottom: 78px;
+}
+
+.payment-details > main {
     padding: 0 130px;
 }
 
-.payment-details > .main-container {
+.payment-details > main > .main-container {
     font-family: 'Plus Jakarta Sans';
     max-width: 1440px;
     width: 100%;
@@ -1222,7 +1227,6 @@ nav {
 }
 
 .payment-details h2 {
-    align-self: center;
     font-size: 22px;
     font-family: 'Plus Jakarta Sans';
     font-weight: 500;
@@ -1246,6 +1250,14 @@ nav {
     justify-content: space-between;
     background-color: #E8E8E84D;
     padding: 10px 32px 10px 10px;
+}
+
+.payment-details .items > .item > button {
+    align-self: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    height: fit-content;
 }
 
 .payment-details .items > .item > div {
@@ -1322,9 +1334,23 @@ nav {
     background: #E8E8E84D;
 }
 
-.payment-details .calc-total > div div {
+.payment-details .calc-total > div > div {
     display: flex;
     justify-content: space-between;
+}
+
+.payment-details .calc-total > div > div h3 {
+    font-family: 'Plus Jakarta Sans';
+    color: #4F5665;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.payment-details .calc-total > div > div p {
+    font-family: 'Plus Jakarta Sans';
+    color: #0B132A;
+    font-weight: 700;
+    font-size: 18px;
 }
 
 .payment-details .calc-total > div > .garis {
@@ -1346,7 +1372,76 @@ nav {
     display: flex;
     flex-direction: column;
     gap: 19px;
+}
+
+.payment-details .calc-total .bank-logo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.payment-details .calc-total > div div:last-child > p {
     color: #4F5665;
     font-weight: 400;
     font-size: 16px;
+}
+
+.payment-details .payment-info {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    margin-bottom: 50px;
+}
+
+.payment-details .payment-info > form {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    margin-top: 26px;
+}
+
+.payment-details .payment-info > form input {
+    height: 44px;
+    width: 100%;
+    background-color: #FCFDFE;
+    border: 1px solid #DEDEDE;
+    border-radius: 8px;
+    padding-left: 39px;
+}
+
+.payment-details .payment-info > form > div {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.payment-details .payment-info > form > label {
+    color: #0B132A;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: 'Plus Jakarta Sans';
+}
+
+.payment-details .payment-info > form > div > img {
+    position: absolute;
+    left: 13px;
+    width: 16px;
+}
+
+.payment-details .payment-info > div {
+    display: flex;
+    justify-content: space-between;
+    gap: 31px;
+}
+
+.payment-details .payment-info > div > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #4F5665;
+    max-width: 206px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #E8E8E8;
+    border-radius: 6px;
 }
