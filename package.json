@@ -1,0 +1,21 @@
+{
+  "name": "weekly3-html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arif14377/koda-b6-html.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Arif14377/koda-b6-html/issues"
+  },
+  "homepage": "https://github.com/Arif14377/koda-b6-html#readme"
+}
