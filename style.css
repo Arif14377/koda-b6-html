@@ -1200,11 +1200,14 @@ nav {
 
 
 /* Desktop - Payment Details */
+.payment-details {
+    padding: 0 130px;
+}
+
 .payment-details > .main-container {
     font-family: 'Plus Jakarta Sans';
     max-width: 1440px;
     width: 100%;
-    padding: 0 130px;
     display: grid;
     grid-template-columns: minmax(0, 680px) minmax(0, 480px);
     gap: 20px;
@@ -1222,7 +1225,7 @@ nav {
     align-self: center;
     font-size: 22px;
     font-family: 'Plus Jakarta Sans';
-    font-weight: 500px;
+    font-weight: 500;
     color: #0B132A;
 }
 
@@ -1302,4 +1305,48 @@ nav {
     color: #D00000;
     font-weight: 500;
     font-size: 12px;
+}
+
+.payment-details .calc-total > h2 {
+    display: flex;
+    height: 40px;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.payment-details .calc-total > div {
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+    padding: 17.5px 20.5px;
+    background: #E8E8E84D;
+}
+
+.payment-details .calc-total > div div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.payment-details .calc-total > div > .garis {
+    border-top: 1px solid #E8E8E8;
+}
+
+.payment-details .calc-total .checkout-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FF8906;
+    border-radius: 6px;
+    height: 40px;
+    text-decoration: none;
+    color: #0B132A;
+}
+
+.payment-details .calc-total > div div:last-child {
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+    color: #4F5665;
+    font-weight: 400;
+    font-size: 16px;
 }
