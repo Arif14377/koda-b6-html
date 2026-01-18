@@ -47,12 +47,12 @@ dataProduct.forEach(product => {
     wrapperCta.append(wrapperBtnBuy)
 
     const btnBuy = document.createElement("a")
-    btnBuy.setAttribute("href", `/pages/desktop-detail-product.html?id=${product.id}`)
+    btnBuy.setAttribute("href", `/pages/detail-product.html?id=${product.id}`)
     btnBuy.textContent = "Buy"
     wrapperBtnBuy.append(btnBuy)
 
     const btnCart = document.createElement("a")
-    btnCart.setAttribute("href", "#")
+    btnCart.setAttribute("href", "/pages/payment-details.html")
     wrapperCta.append(btnCart)
 
     const iconBtnCart = document.createElement("img")
