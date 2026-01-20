@@ -63,23 +63,24 @@ dataProduct.forEach(product => {
 
 const dataTestimoni = await getDataTestimoni(urlTestimoni)
 // console.log(dataTestimoni)
-let i = 1
+
+let i = 0
 
 function renderTestimoni(i) {
+    const inTestimoni = document.querySelector(".in-testimoni")
+    const divImgTestimoni = document.querySelector(".img-testimoner")
 
-    const testimonial = document.querySelector(".testimonial")
-
-    const divImgTestimoni = document.createElement("div")
-    divImgTestimoni.classList = "img-testimoner"
-    testimonial.append(divImgTestimoni)
-
+    divImgTestimoni.innerHTML = ""
+    inTestimoni.innerHTML = ""
+    
     const imgTestimoner = document.createElement("img")
-    imgTestimoner.setAttribute("src", `${dataTestimoni[i].imageUrl}`)
+    imgTestimoner.setAttribute("src", dataTestimoni[i].imageUrl)
     imgTestimoner.setAttribute("alt", "customer")
     divImgTestimoni.append(imgTestimoner)
 
+    // console.log(dataTestimoni[2].imageUrl)
 
-    const inTestimoni = document.querySelector(".in-testimoni")
+
 
     const hTestimoni = document.createElement("h2")
     hTestimoni.textContent = "TESTIMONIAL"
@@ -125,6 +126,22 @@ const kanan = document.getElementById("kanan")
 
 kanan.addEventListener("click", event => {
     event.preventDefault()
-    i += 1
+
+    if (i >= dataTestimoni.length-1) {
+        i = 0
+    } else {
+        i = i + 1
+    }
+    renderTestimoni(i)
+})
+
+kiri.addEventListener("click", event => {
+    event.preventDefault()
+
+    if (i <= 0) {
+        i = dataTestimoni.length-1
+    } else {
+        i = i- 1
+    }
     renderTestimoni(i)
 })
