@@ -608,33 +608,33 @@ nav {
     background-image: url(/assets/images/Rectangle\ 294.png);
     margin-bottom: 70px;
 }
-.testimonial>.img-viezh {
+.testimonial>.img-testimoner {
     position: absolute;
     left: 132px;
     top: 76px;
 }
-.testimonial>.testimoni-viezh {
+.testimonial>.testimoni {
     position:absolute;
     left: 730px;
     top: 76px;
 }
-.testimonial>.testimoni-viezh>h2 {
+.testimonial>.testimoni>.in-testimoni>h2 {
     color: white;
     font-size: 16px;
     font-weight: 400;
     margin-bottom: 25px;
 }
-.testimonial>.testimoni-viezh>.wrapper-name-viezh {
+.testimonial>.testimoni>.in-testimoni>.wrapper-name-testimoner {
     margin-bottom: 25px;
 }
-.testimonial>.testimoni-viezh .garis-vertical {
+.testimonial>.testimoni>.in-testimoni .garis-vertical {
     display: inline-block;
     width: 7px;
     height: 68px;
     background-color: #FF8906;
     margin-right: 20px;
 }
-.testimonial>.testimoni-viezh h3 {
+.testimonial>.testimoni>.in-testimoni h3 {
     display: inline-block;
     color: white;
     font-size: 48px;
@@ -642,52 +642,21 @@ nav {
     font-family: 'Plus Jakarta Sans';
     vertical-align: top;
 }
-.testimonial>.testimoni-viezh>.occup {
+.testimonial>.testimoni>.in-testimoni>.occup {
     color: #FF8906;
     margin-bottom: 25px;
 }
-.testimonial>.testimoni-viezh>.quote {
+.testimonial>.testimoni>.in-testimoni>.quote {
     color: white;
     margin-bottom: 25px;
 }
-.testimonial>.testimoni-viezh>.stars svg {
+.testimonial>.testimoni>.in-testimoni>.stars svg {
     margin-right: 25px;
     height: 20px;
 }
-.testimonial>.testimoni-viezh>.stars {
+.testimonial>.testimoni>.in-testimoni>.stars {
     color: white;
     margin-bottom: 25px;
-}
-.testimonial .icon-panah-1 {
-    display: inline-block;
-    margin-right: 9px;
-    margin-bottom: 25px;
-}
-.testimonial .icon-panah-2 {
-    display: inline-block;
-    margin-right: 9px;
-    margin-bottom: 25px;
-}
-.testimonial .icon-panah-2 {
-    margin-right: 0;
-}
-.testimonial .icon-panah-1 svg {
-    display: inline-block;
-    vertical-align: middle;
-    width: 47px;
-    height: 47px;
-    border-radius: 50%;
-    background-color: white;
-    padding: 15.67px 15.67px 14.99px 14.99px;
-}
-.testimonial .icon-panah-2 svg {
-    display: inline-block;
-    vertical-align: middle;
-    width: 47px;
-    height: 47px;
-    border-radius: 50%;
-    background-color: #FF8906;
-    padding: 15.67px 15.67px 14.99px 14.99px;
 }
 .testimonial .wrapper-pagination>.lonjong {
     margin-right: 9px;
@@ -705,6 +674,11 @@ nav {
 .testimonial .pagination:last-child {
     margin-right: 0px;
 }
+.stars {
+    display: flex;
+    gap: 25px;
+}
+
 
 
 /** Desktop - Product **/

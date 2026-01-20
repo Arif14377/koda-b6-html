@@ -63,3 +63,68 @@ dataProduct.forEach(product => {
 
 const dataTestimoni = await getDataTestimoni(urlTestimoni)
 // console.log(dataTestimoni)
+let i = 1
+
+function renderTestimoni(i) {
+
+    const testimonial = document.querySelector(".testimonial")
+
+    const divImgTestimoni = document.createElement("div")
+    divImgTestimoni.classList = "img-testimoner"
+    testimonial.append(divImgTestimoni)
+
+    const imgTestimoner = document.createElement("img")
+    imgTestimoner.setAttribute("src", `${dataTestimoni[i].imageUrl}`)
+    imgTestimoner.setAttribute("alt", "customer")
+    divImgTestimoni.append(imgTestimoner)
+
+
+    const inTestimoni = document.querySelector(".in-testimoni")
+
+    const hTestimoni = document.createElement("h2")
+    hTestimoni.textContent = "TESTIMONIAL"
+    inTestimoni.append(hTestimoni)
+
+    const divWrapNameTestimoner = document.createElement("div")
+    divWrapNameTestimoner.classList = "wrapper-name-testimoner"
+    inTestimoni.append(divWrapNameTestimoner)
+
+    const garisVertical = document.createElement("div")
+    garisVertical.classList = "garis-vertical"
+    divWrapNameTestimoner.append(garisVertical)
+
+    const nameTestimoner = document.createElement("h3")
+    nameTestimoner.textContent = `${dataTestimoni[i].name}`
+    divWrapNameTestimoner.append(nameTestimoner)
+
+    const occup = document.createElement("p")
+    occup.classList = "occup"
+    occup.textContent = `${dataTestimoni[i].occupation}`
+    inTestimoni.append(occup)
+
+    const quote = document.createElement("p")
+    quote.classList = "quote"
+    quote.textContent = `${dataTestimoni[i].testimoni}`
+    inTestimoni.append(quote)
+
+    const stars = document.createElement("div")
+    stars.classList = "stars"
+    inTestimoni.append(stars)
+
+    for (let j = 0; j < dataTestimoni[i].stars; j++) {
+        const imgStar = document.createElement("img")
+        imgStar.setAttribute("src", "/assets/images/star.svg")
+        stars.append(imgStar)
+    }
+}
+
+renderTestimoni(i)
+
+const kiri = document.getElementById("kiri")
+const kanan = document.getElementById("kanan")
+
+kanan.addEventListener("click", event => {
+    event.preventDefault()
+    i += 1
+    renderTestimoni(i)
+})
