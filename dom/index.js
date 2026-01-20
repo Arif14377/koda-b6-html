@@ -1,3 +1,4 @@
+import { getDataTestimoni, urlTestimoni } from "../services/fetch-testimoni.js";
 import { getDataProduct, urlProduct } from "../services/fetch.js";
 
 const dataProduct = await getDataProduct(urlProduct)
@@ -59,3 +60,6 @@ dataProduct.forEach(product => {
     iconBtnCart.setAttribute("src", "/assets/images/cart-yellow.svg")
     btnCart.append(iconBtnCart)
 });
+
+const dataTestimoni = await getDataTestimoni(urlTestimoni)
+// console.log(dataTestimoni)
