@@ -25,7 +25,7 @@
                 <h1>Login</h1>
                 <p>Fill out the form correctly</p>
             </div>
-            <form autocomplete="on">
+            <form id="form-login" autocomplete="on">
                 <label for="email">Email</label><br>
                 <div class="wrap-input">
                     <svg class="icon-depan" width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -54,9 +54,12 @@
                         <path d="M8.4707 5.54443C9.00206 5.64647 9.48601 5.91803 9.84997 6.31839C10.2139 6.71875 10.4383 7.22633 10.4893 7.76498" stroke="#4F5665" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </div>
+                <div>
+                    <a href="./forgot-password.html">Forgot password?</a>
+                </div>
                 <input class="btn-submit" type="submit" value="Login">
             </form>
-            <p class="have-account">Not Have An Account? <a href="#" class="have-account-link">Register</a></p>
+            <p class="have-account">Not Have An Account? <a href="./register.html" class="have-account-link">Register</a></p>
             <div class="wrap-or-bottom">
                 <hr class="hr-1">
                 <span class="or">Or</span>
@@ -81,5 +84,7 @@
             </div>
         </div>
     </div>
+
+    <script src="../dom/login.js"></script>
 </body>
 </html>

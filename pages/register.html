@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Desktop-Register</title>
+    <title>Register</title>
     <meta name="description" content="Web page desktop-register">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,8 +25,8 @@
                 <h1>Register</h1>
                 <p>Fill out the form correctly</p>
             </div>
-            <form autocomplete="on">
-                <label for="fname">Full Name</label><br>
+            <form id="form-register" autocomplete="on" type="submit">
+                <label for="fName">Full Name</label><br>
                 <div class="wrap-input">
                     <svg class="icon-depan" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="Iconly/Light/Profile">
@@ -36,7 +36,7 @@
                         </g>
                         </g>
                     </svg>
-                    <input type="text" id="fname" name="fname" placeholder="Enter Your Full Name">
+                    <input type="text" id="fName" name="fullName" placeholder="Enter Your Full Name">
                 </div>
                 <label for="email">Email</label><br>
                 <div class="wrap-input">
@@ -57,7 +57,7 @@
                     </g>
                     </g>
                     </svg>
-                    <input type="password" id="pwd" name="pwd" placeholder="Enter Your Password">
+                    <input type="password" id="pwd" name="password" placeholder="Enter Your Password">
                     <svg class="icon-belakang" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M3 2.5L13 13.5" stroke="#4F5665" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M9.68155 9.84987C9.19092 10.2958 8.54325 10.5286 7.88099 10.497C7.21874 10.4655 6.59614 10.1721 6.15016 9.68155C5.70417 9.19097 5.47132 8.54331 5.50283 7.88106C5.53433 7.2188 5.82762 6.59618 6.31816 6.15015" stroke="#4F5665" stroke-linecap="round" stroke-linejoin="round"/>
@@ -66,7 +66,7 @@
                         <path d="M8.4707 5.54443C9.00206 5.64647 9.48601 5.91803 9.84997 6.31839C10.2139 6.71875 10.4383 7.22633 10.4893 7.76498" stroke="#4F5665" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </div>
-                <label for="pwd">Confirm Password</label><br>
+                <label for="pwd2">Confirm Password</label><br>
                 <div class="wrap-input">
                     <svg class="icon-depan" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="Iconly/Curved/Password">
@@ -78,7 +78,7 @@
                         </g>
                         </g>
                     </svg>
-                    <input type="password" id="pwd" name="pwd" placeholder="Enter Your Password Again">
+                    <input type="password" id="pwd2" name="pwd2" placeholder="Enter Your Password Again">
                     <svg class="icon-belakang" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M3 2.5L13 13.5" stroke="#4F5665" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M9.68155 9.84987C9.19092 10.2958 8.54325 10.5286 7.88099 10.497C7.21874 10.4655 6.59614 10.1721 6.15016 9.68155C5.70417 9.19097 5.47132 8.54331 5.50283 7.88106C5.53433 7.2188 5.82762 6.59618 6.31816 6.15015" stroke="#4F5665" stroke-linecap="round" stroke-linejoin="round"/>
@@ -89,7 +89,7 @@
                 </div>
                 <input class="btn-submit" type="submit" value="Register">
             </form>
-            <p class="have-account">Have An Account? <a href="#" class="have-account-link">Login</a></p>
+            <p class="have-account">Have An Account? <a href="./login.html" class="have-account-link">Login</a></p>
             <div class="wrap-or-bottom">
                 <hr class="hr-1">
                 <span class="or">Or</span>
@@ -114,5 +114,7 @@
             </div>
         </div>
     </div>
+
+    <script src="/dom/register.js"></script>
 </body>
 </html>
