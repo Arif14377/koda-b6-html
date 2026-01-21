@@ -806,11 +806,11 @@ nav {
 .our-product {
     padding: 0 8.313rem 2rem 7.938rem;
 }
-.our-product > h2 {
+h2 {
     color: #0B0909;
     margin-bottom: 1.535rem;
 }
-.our-product > h2 > span {
+h2 > span {
     color: #8E6447;
 }
 .our-product > .flex-container {
@@ -1154,24 +1154,93 @@ nav {
 }
 .recommend-product > .recommend-list {
     display: flex;
+    gap: 23px;
+}
+.recommend-item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 345px;
+    position: relative;
+    height: 600px;
 }
 .recommend-product .recommend-item > div:first-child {
     position: relative;
 }
 .recommend-product .recommend-item > div:first-child > p {
     position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: red;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 25px;
 }
 .recommend-product .recommend-item > div:first-child > img {
     width: 100%;
 }
 .recommend-product .recommend-item > div:last-child {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
     width: 100%;
-    max-width: 21.563rem;
+    max-width: 300px;
+    position: absolute;
+    top: 300px;
+    z-index: 2;
+    background-color: white;
+    padding: 10px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .recommend-product .recommend-item > div:last-child > .btn-product {
     display: flex;
 }
-
+.recommend-item .desc-item > div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.recommend-item .desc-item > div > span {
+    color: red;
+    text-decoration: line-through;
+    font-size: 12px;
+    font-weight: 500;
+}
+.recommend-item .desc-item > div > .price {
+    color: #FF8906;
+    font-weight: 500;
+    font-size: 22px;
+}
+.recommend-item .desc-item > .btn-product {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+.recommend-item .desc-item > .btn-product > .buy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #0B132A;
+    border-radius: 6px;
+    background-color: #FF8906;
+    height: 35px;
+    flex: 1;
+}
+.recommend-item .desc-item > .btn-product > div > .cart {
+    text-decoration: none;
+    height: fit-content;
+}
+.recommend-item .desc-item > .btn-product > .cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 49px;
+    height: 35px;
+    border: 1px solid #FF8906;
+    border-radius: 6px;
+}
 
 /* Desktop - Payment Details */
 
