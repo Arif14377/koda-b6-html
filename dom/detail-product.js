@@ -218,6 +218,70 @@ function renderData(dataProduct, queryId) {
 
     btnCart.append(imgBtnCart, addToCart)
 
+    // recommend item
+    for (let i=0; i<3; i++) {
+        const wrapRecomItem = document.querySelector(".recommend-list")
+        const recommendItem = document.createElement("div")
+        recommendItem.classList.add("recommend-item")
+        wrapRecomItem.append(recommendItem)
+
+        const divSale = document.createElement("div")
+        recommendItem.append(divSale)
+
+        const pSale = document.createElement("p")
+        pSale.textContent = "FLASH SALE"
+        divSale.append(pSale)
+
+        const imgRecItem = document.createElement("img")
+        imgRecItem.setAttribute("src", "/assets/images/image 30.png")
+        divSale.append(imgRecItem)
+
+        const divDescRecItem = document.createElement("div")
+        divDescRecItem.classList.add("desc-item")
+        recommendItem.append(divDescRecItem)
+
+        const hRecItem = document.createElement("h3")
+        hRecItem.textContent = "Hazelnut Latte"
+        divDescRecItem.append(hRecItem)
+
+        const descRecItem = document.createElement("p")
+        descRecItem.textContent = "You can explore the menu that we provide with fun and have their own taste and make your day better."
+        divDescRecItem.append(descRecItem)
+
+        const stars = document.createElement("div")
+        stars.classList.add("stars")
+        divDescRecItem.append(stars)
+
+        for (let j = 0; j < 5; j++) {
+            const imgStar = document.createElement("img")
+            imgStar.setAttribute("src", "/assets/images/star.svg")
+            stars.append(imgStar)
+        }
+
+        const pStar = document.createElement("p")
+        pStar.textContent = "5.0"
+        stars.append(pStar)
+
+        const divBtnRecomItem = document.createElement("div")
+        divBtnRecomItem.classList.add("btn-product")
+        divDescRecItem.append(divBtnRecomItem)
+
+        const btnBuyRecom = document.createElement("a")
+        btnBuyRecom.classList.add("buy")
+        btnBuyRecom.setAttribute("href", "#")
+        btnBuyRecom.textContent = "Buy"
+        divBtnRecomItem.append(btnBuyRecom)
+
+        const btnCartRecom = document.createElement("a")
+        btnCartRecom.classList.add("cart")
+        btnCartRecom.setAttribute("href", "#")
+        divBtnRecomItem.append(btnCartRecom)
+
+        const yellowCart = document.createElement("img")
+        yellowCart.setAttribute("src", "../assets/images/cart-yellow.svg")
+        yellowCart.setAttribute("alt", "cart-icon")
+        btnCartRecom.append(yellowCart)
+    }
 }
 
 renderData(dataProduct, queryId)
