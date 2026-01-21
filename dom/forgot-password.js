@@ -5,8 +5,14 @@ form.addEventListener("submit", function(event) {
 
     const email = document.getElementById("email").value
     const data = JSON.parse(window.localStorage.getItem("data"))
+    // console.log(data)
+    if (!data) {
+        alert("Data tidak ditemukan")
+        throw new Error("Data tidak ditemukan")
+    }
 
     if (!email) {
+        alert("Email tidak boleh kosong.")
         throw new Error("Email tidak boleh kosong.")
     }
 
@@ -17,6 +23,7 @@ form.addEventListener("submit", function(event) {
             alert("Reset password berhasil. Cek email Anda.")
             window.location.href = "./login.html"
         } else {
+            alert("Email tidak terdaftar.")
             throw new Error("Email tidak terdaftar.")
         }
     }
