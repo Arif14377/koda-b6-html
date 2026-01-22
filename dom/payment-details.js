@@ -77,3 +77,71 @@ if (data) {
 }
 
 // Calculate
+const sumOrder = document.querySelector(".sum-order")
+const ongkir = document.querySelector(".ongkir")
+const tax = document.querySelector(".tax")
+const totalPayment = document.querySelector(".total-payment")
+
+// data cart:
+// name
+// isFlashSale
+// qty
+// size 
+// variant 
+// place 
+// oriprice
+// price 
+
+// calc function
+// console.log(data)
+const calcSumOrder = function(data) {
+    let sum = 0
+    if (!data) {
+        return sum = 0
+    } else {
+        data.forEach(item => {
+            if (item.isFlashSale) {
+                sum = sum + item.price
+            } else {
+                sum = sum + item.oriPrice
+            }
+        });
+        return sum
+    }
+}
+
+const calcTaxOrder = function(calcSum, data) {
+    const tax = 0.1
+    let calcTax = 0
+
+    if (!data) {
+        return calcTax = 0
+    } else {
+        calcTax = calcSum * tax
+        return calcTax
+    }
+}
+
+const calcTotalOrder = function(calcSum, calcTax) {
+    const total = calcSum + calcTax
+    return total
+}
+
+const calcSum = calcSumOrder(data)
+const calcTax = calcTaxOrder(calcSum, data)
+const calcTotal = calcTotalOrder(calcSum, calcTax)
+
+// console.log(calcSumOrder(data))
+
+// dom
+const pSumOrder = document.createElement("p")
+pSumOrder.textContent = `${calcSum}`
+sumOrder.append(pSumOrder)
+
+const pOngkir = document.createElement("p")
+pOngkir.textContent = "0"
+ongkir.append(pOngkir)
+
+const pTax = document.createElement("p")
+pTax.textContent = `${calcTax}`
+tax.append(pTax)
