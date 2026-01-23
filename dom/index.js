@@ -48,16 +48,16 @@ dataProduct.forEach(product => {
     wrapperCta.append(wrapperBtnBuy)
 
     const btnBuy = document.createElement("a")
-    btnBuy.setAttribute("href", `/pages/detail-product.html?id=${product.id}`)
+    btnBuy.setAttribute("href", `./pages/detail-product.html?id=${product.id}`)
     btnBuy.textContent = "Buy"
     wrapperBtnBuy.append(btnBuy)
 
     const btnCart = document.createElement("a")
-    btnCart.setAttribute("href", "/pages/payment-details.html")
+    btnCart.setAttribute("href", "./pages/payment-details.html")
     wrapperCta.append(btnCart)
 
     const iconBtnCart = document.createElement("img")
-    iconBtnCart.setAttribute("src", "/assets/images/cart-yellow.svg")
+    iconBtnCart.setAttribute("src", "./assets/images/cart-yellow.svg")
     btnCart.append(iconBtnCart)
 });
 
@@ -114,7 +114,7 @@ function renderTestimoni(i) {
 
     for (let j = 0; j < dataTestimoni[i].stars; j++) {
         const imgStar = document.createElement("img")
-        imgStar.setAttribute("src", "/assets/images/star.svg")
+        imgStar.setAttribute("src", "./assets/images/star.svg")
         stars.append(imgStar)
     }
 }
