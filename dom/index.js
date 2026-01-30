@@ -2,7 +2,7 @@ import { getDataTestimoni, urlTestimoni } from "../services/fetch-testimoni.js";
 import { getDataProduct, urlProduct } from "../services/fetch.js";
 
 const dataProduct = await getDataProduct(urlProduct)
-// console.log(dataProduct)
+console.log(dataProduct)
 
 const wrapperProducts = document.querySelector(".list-product")
 
